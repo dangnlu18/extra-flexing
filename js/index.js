@@ -1,6 +1,16 @@
-const moveSelected = () => {
-  //Do you dare take this on? Maybe look into JQuery, 
-  //it's not taught at Lambda since it has nothing to do with React 
-  //but it's still alive out there since the internet was built on it for a long time. 
-  //Good luck.
+<script>
+
+var elements = document.getElementsByClassName("column");
+var i;
+
+function all(){
+	for (i=0; i<elements.length; i++) {
+		elements[i].style.flex = "100%";
+	}
+}
+
+function beautiiful(){
+	for(i=0 ; elements.length; i++) {
+		elements[i].style.flex = "50%";
+	}
 }
