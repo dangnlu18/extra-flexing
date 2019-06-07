@@ -46,3 +46,88 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	font-family: 'Quicksand' ; font-size: 22px;
+}
+
+.container{
+	width: 900px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+header {
+	height: 200px;
+	width: 100%;
+/*	background-image: linear-gradient(blue, red, purple);
+*/	background-image: url("/Users/dang.lu/desktop/lambdaschool/projects/extra-flexing/assets/images/pic010.jpg");
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+h1{
+	margin:20px;
+	color: white;
+	font-size: 30px;
+}
+p {
+	margin:10px;
+	color: white;
+	font-size: 16px;
+}
+
+nav{
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	align-items: center;
+}
+
+button {
+	height: 20px;
+	width: 70px;
+	border: 0;
+}
+
+a {
+	background-color: white;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+/*	flex: 50%;
+*/	/*max-width: 100%;*/
+	flex-wrap: wrap;
+
+}
+
+.images {
+	flex: 50%;
+	max-width: 50%;
+
+}
+
+img { 
+
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+
