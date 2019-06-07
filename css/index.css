@@ -61,7 +61,7 @@ header {
 	height: 200px;
 	width: 100%;
 /*	background-image: linear-gradient(blue, red, purple);
-*/	background-image: url("/Users/dang.lu/desktop/lambdaschool/projects/extra-flexing/assets/images/pic010.jpg");
+*/	background-image: url("../assets/images/pic010.jpg");
 	background-size: 100% 100%;
 	display: flex;
 	flex-flow: column;
@@ -95,25 +95,26 @@ button {
 a {
 	background-color: white;
 	text-decoration: none;
+	color: grey;
 }
 
-main {
+.row {
 	display: flex;
-/*	flex: 50%;
-*/	/*max-width: 100%;*/
 	flex-wrap: wrap;
-
 }
 
-.images {
-	flex: 50%;
-	max-width: 50%;
-
+.column {
+	flex: 25%;
+	max-width: 25%;
 }
 
-img { 
-
+img {
 	width: 100%;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
 }
 
 @media screen and (max-width: 800px) {
